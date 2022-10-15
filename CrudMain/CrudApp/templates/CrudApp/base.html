@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<title>Django CRUD Project</title>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'CrudApp/css/bootstrap.css' %}">
+</head>
+<body>
+<div class="container mt-5">
+    <h2 class="text-center alert alert-danger">Student Application</h2>
+    {% block content %} {% endblock content %}
+</div>
+<script src="{% static 'CrudApp/js/jquery.js' %}"></script>
+<script src="{% static 'CrudApp/js/popper.js' %}"></script>
+<script src="{% static 'CrudApp/js/bootstrap.js' %}"></script>
+</body>
+</html>
